@@ -10,4 +10,4 @@ Online examples: Multi-Sorting : https://blazor.syncfusion.com/demos/datagrid/so
 # Project prerequisites
 Make sure that you have the latest versions of 'Visual Studio 2022' in your machine before starting to work on this project.
 # How to run this application?
-To run this application, you need to first clone the <code>Auto-Generate-Columns-in-Blazor-DataGrid</code> repository and then open it in Visual Studio 2022. Now, simply build and run your project to view the output.
+To run this application, you need to first clone the <code>Blazor-DataGrid-Sorting</code> repository and then open it in Visual Studio 2022. Now, simply build and run your project to view the output.
