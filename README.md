@@ -1,6 +1,6 @@
 # Blazor-DataGrid-Sorting
 
-A quick-start project that helps you how to sorting in blazor DataGrid and customize using Data annotations. 
+A quick-start project that helps you how to sorting in blazor DataGrid. 
 
 Documentation: https://blazor.syncfusion.com/documentation/datagrid/sorting
 
