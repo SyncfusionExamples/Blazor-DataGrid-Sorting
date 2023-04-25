@@ -4,8 +4,7 @@ A quick-start project that helps you how to sorting in blazor DataGrid.
 
 Documentation: https://blazor.syncfusion.com/documentation/datagrid/sorting
 
-Online examples: Multi-Sorting : https://blazor.syncfusion.com/demos/datagrid/sorting?theme=fluent
-                 
+Online examples: Multi-Sorting : https://blazor.syncfusion.com/demos/datagrid/sorting?theme=fluent                                                                     
                  Custom sorting : https://blazor.syncfusion.com/demos/datagrid/customsorting?theme=fluent
 
 # Project prerequisites
