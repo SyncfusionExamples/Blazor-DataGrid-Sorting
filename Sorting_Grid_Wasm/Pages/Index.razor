@@ -1,11 +1,10 @@
 ﻿@page "/"
-
 @using Syncfusion.Blazor.Grids
 
 @* Sorting.
 Sorting enables you to sort data in the Ascending or Descending order. To sort a column, click the column header.*@
 
-<SfGrid  DataSource="@Orders" AllowSorting="true">
+<SfGrid  DataSource="@Orders" AllowSorting ="true">
    <GridColumns>
      <GridColumn Field=@nameof(Order.OrderID) HeaderText="Order ID" TextAlign="TextAlign.Center" Width="120"></GridColumn>
      <GridColumn Field=@nameof(Order.CustomerID) HeaderText="Customer Name" Width="150"></GridColumn>
@@ -19,7 +18,7 @@ Sorting enables you to sort data in the Ascending or Descending order. To sort a
 
     protected override void OnInitialized()
     {
-        Orders = Enumerable.Range(1, 75).Select(x => new Order()
+        Orders = Enumerable.Range(1, 20).Select(x => new Order()
         {
             OrderID = 1000 + x,
             CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
@@ -35,4 +34,5 @@ Sorting enables you to sort data in the Ascending or Descending order. To sort a
         public DateTime? OrderDate { get; set; }
         public double? Freight { get; set; }
     }
+   
 }

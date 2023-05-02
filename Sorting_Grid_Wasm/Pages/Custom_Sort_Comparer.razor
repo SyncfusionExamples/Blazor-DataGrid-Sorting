@@ -5,7 +5,7 @@
 You can customize the default sort action for a specific Grid column by defining the SortComparer property of GridColumn Directive.
 The SortComparer data type was the IComparer interface, so the custom sort comparer class should be implemented in the interface IComparer.*@
 
-<SfGrid DataSource="@Orders" AllowSorting="true">
+<SfGrid DataSource="@Orders" AllowSorting="true" Width="600" Height="270">
     <GridColumns>
         <GridColumn Field=@nameof(Order.OrderID) Visible="true" HeaderText="Order ID" Width="80"></GridColumn>
         <GridColumn Field=@nameof(Order.CustomerID) SortComparer="new CustomComparer()" HeaderText="Customer Name" Width="120"></GridColumn>
@@ -21,13 +21,13 @@ The SortComparer data type was the IComparer interface, so the custom sort compa
     protected override void OnInitialized()
     {
         Orders = Enumerable.Range(1, 10).Select(x => new Order()
-        {
-            OrderID = 1000 + x,
-            CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTONER", "JOE", "BOSS" })[new Random().Next(5)],
-            Freight = 2.1 * x,
-            OrderDate = DateTime.Now.AddDays(-x),
-            ShipCountry = (new string[] { "USA", "UK", "INDIA", "CHINA", "ENGLAND" })[new Random().Next(5)],
-        }).ToList();
+            {
+                OrderID = 1000 + x,
+                CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                Freight = 2.1 * x,
+                OrderDate = DateTime.Now.AddDays(-x),
+                ShipCountry = (new string[] { "USA", "UK", "INDIA", "CHINA", "ENGLAND" })[new Random().Next(5)],
+            }).ToList();
     }
 
     public class Order
@@ -41,17 +41,17 @@ The SortComparer data type was the IComparer interface, so the custom sort compa
 
     public class CustomComparer : IComparer<Object>
     {
-        public int Compare(object? XRowDataToCompare, object? YRowDataToCompare)
+        public int Compare(object XRowDataToCompare, object YRowDataToCompare)
         {
             Order? XRowData = XRowDataToCompare as Order;
             Order? YRowData = YRowDataToCompare as Order;
-            string? XRowDataOrderID = XRowData?.CustomerID;
-            string? YRowDataOrderID = YRowData?.CustomerID;
-            if (XRowDataOrderID?.Length < YRowDataOrderID?.Length)
+            int? XRowDataOrderID = XRowData?.OrderID;
+            int? YRowDataOrderID = YRowData?.OrderID;
+            if (XRowDataOrderID < YRowDataOrderID)
             {
                 return -1;
             }
-            else if (XRowDataOrderID?.Length > YRowDataOrderID?.Length)
+            else if (XRowDataOrderID > YRowDataOrderID)
             {
                 return 1;
             }
