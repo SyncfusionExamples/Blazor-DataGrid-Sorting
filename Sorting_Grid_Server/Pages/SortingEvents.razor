@@ -44,7 +44,10 @@ Using these events you can perform the needed actions.
     {
         if (args.RequestType.Equals(Syncfusion.Blazor.Grids.Action.Sorting))
         {
-            args.Cancel = true;
+            if (args.ColumnName.Equals(nameof(Order.OrderID)))
+            {
+                args.Cancel = true;
+            }
         }
     }
     
