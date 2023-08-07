@@ -1,4 +1,4 @@
-# Blazor-DataGrid-Sorting
+# Blazor DataGrid Sorting
 
 A quick-start project that helps you how to sorting in blazor DataGrid. 
 
