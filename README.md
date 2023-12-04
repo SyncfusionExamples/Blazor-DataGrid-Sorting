@@ -9,10 +9,11 @@ A quick-start project that helps you how to sorting in blazor DataGrid.
 * **Multi-Sorting**: https://blazor.syncfusion.com/demos/datagrid/sorting?theme=fluent
 * **Custom-Sorting**: https://blazor.syncfusion.com/demos/datagrid/customsorting?theme=fluent
 
-# Prerequisites
-Visual Studio 2022
+## Prerequisites
 
-# How to run the project
+* Visual Studio 2022
+
+## How to run the project
 
 * Checkout this project to a location in your disk.
 * Open the solution file using the Visual Studio 2022.
