@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains sample applications that demonstrate sorting functionality in the Syncfusion Blazor DataGrid. The repository includes separate implementations for both Blazor Server and Blazor WebAssembly hosting models, allowing developers to explore sorting behavior across different Blazor application types. The samples illustrate how DataGrid sorting can be configured and used to organize displayed records based on user interaction with column headers. These projects serve as a practical starting point for implementing sorting scenarios in Syncfusion Blazor DataGrid applications.
+This repository contains sample applications that demonstrate sorting functionality in the Syncfusion [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid). The repository includes separate implementations for both Blazor Server and Blazor WebAssembly hosting models, allowing developers to explore sorting behavior across different Blazor application types. The samples illustrate how DataGrid sorting can be configured and used to organize displayed records based on user interaction with column headers. These projects serve as a practical starting point for implementing sorting scenarios in Syncfusion Blazor DataGrid applications.
 
 ## Key Features
 
@@ -54,7 +54,7 @@ dotnet run
 
 - For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
 - To report an issue specific to this sample, open a GitHub issue in this repository.
-- For official documentation related to this feature, see: https://blazor.syncfusion.com/documentation/datagrid/sorting
+- For official documentation related to this feature, see: https://help.syncfusion.com/grid-sdk/blazor/data-grid/sorting
 
 ## License
 
